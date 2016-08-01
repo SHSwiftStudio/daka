@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  File.swift
 //  qiandao
 //
 //  Created by Walter on 8/1/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class YouhuiController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,4 +22,3 @@ class SecondViewController: UIViewController {
     
     
 }
-
