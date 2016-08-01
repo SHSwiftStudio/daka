@@ -33,7 +33,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="6HP-dz-CgX" kind="show" id="Qjw-1M-Ni5"/>
+                                    <segue destination="6HP-dz-CgX" kind="show" id="BEz-3h-vqi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,6 +73,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="fvp-su-5O2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8x-ti-Kbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,57 +136,57 @@
             </objects>
             <point key="canvasLocation" x="696" y="1123"/>
         </scene>
-        <!--个人信息-->
-        <scene sceneID="f2i-aq-U3i">
+        <!--我的信息-->
+        <scene sceneID="zFP-Kj-HNn">
             <objects>
-                <viewController title="个人信息" id="SZo-en-sLt" customClass="PersonalinfoController" customModule="qiandao" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="4mp-0a-K9q" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Hsy-DW-kkb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mBw-sB-VS6">
+                            <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="签到记录"/>
+                            <connections>
+                                <segue destination="Eug-xp-Afd" kind="push" id="9hM-Hc-cUF"/>
+                            </connections>
+                        </button>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="sp7-yT-ZZm">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sp7-yT-ZZm" id="dIS-vo-t2x">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4mp-0a-K9q" id="YIG-Ya-Qpb"/>
+                            <outlet property="delegate" destination="4mp-0a-K9q" id="hV3-8r-wfe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="我的信息" id="X2z-0z-I0B"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VfM-eR-b7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-150" y="2009"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZPT-Ft-igR">
+            <objects>
+                <viewController id="Eug-xp-Afd" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="QWI-5h-GYV"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qnj-w1-o1M"/>
+                        <viewControllerLayoutGuide type="top" id="9fs-xB-THl"/>
+                        <viewControllerLayoutGuide type="bottom" id="J85-by-g1X"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4bF-AQ-Mau">
+                    <view key="view" contentMode="scaleToFill" id="FBt-R5-E1Z">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="55" translatesAutoresizingMaskIntoConstraints="NO" id="SOZ-y8-018">
-                                <rect key="frame" x="43" y="20" width="513" height="128"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w7k-a5-hje">
-                                <rect key="frame" x="270" y="225" width="60" height="150"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lj-eM-F5h">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
-                                        <state key="normal" title="我的签到"/>
-                                        <connections>
-                                            <segue destination="0z8-3G-mqH" kind="show" id="cnM-AQ-br7"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5B-NQ-TX0">
-                                        <rect key="frame" x="0.0" y="30" width="60" height="30"/>
-                                        <state key="normal" title="个人信息"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1o-4Q-2gY">
-                                        <rect key="frame" x="0.0" y="60" width="60" height="30"/>
-                                        <state key="normal" title="我的积分"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRn-my-y0R">
-                                        <rect key="frame" x="0.0" y="90" width="60" height="30"/>
-                                        <state key="normal" title="最近浏览"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbV-D7-3TU">
-                                        <rect key="frame" x="0.0" y="120" width="60" height="30"/>
-                                        <state key="normal" title="设置"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="版本：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqI-7Y-AuW">
-                                <rect key="frame" x="275" y="443" width="51" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGG-YK-Kd6">
-                                <rect key="frame" x="288" y="472" width="22" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="暂无记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pld-Xe-XIz">
+                                <rect key="frame" x="266" y="289" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -193,40 +194,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="个人信息" image="first" selectedImage="first" id="25l-C0-FC1"/>
+                    <navigationItem key="navigationItem" id="xJC-gR-yHV"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3A5-Ga-4J2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qcx-Rd-RDp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-306" y="1231"/>
+            <point key="canvasLocation" x="516" y="2009"/>
         </scene>
-        <!--签到列表-->
-        <scene sceneID="Yxg-qV-p9v">
+        <!--Item-->
+        <scene sceneID="wXm-LG-cbi">
             <objects>
-                <tableViewController id="0z8-3G-mqH" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UXi-Ti-PYa">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qLO-Yd-zGm">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qLO-Yd-zGm" id="Rmz-KN-Aha">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="0z8-3G-mqH" id="dS6-LE-w9p"/>
-                            <outlet property="delegate" destination="0z8-3G-mqH" id="RkY-aq-Eyt"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="签到列表" id="2ZF-L8-hU8"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qav-sg-9K8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="Na4-0u-fyo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="72X-EW-FUY"/>
+                    <navigationItem key="navigationItem" id="m3Q-DK-vgH"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SnN-ev-0P5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4mp-0a-K9q" kind="relationship" relationship="rootViewController" id="GAB-48-Egd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="faB-kk-esl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-306" y="1980"/>
+            <point key="canvasLocation" x="-940" y="2009"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -242,7 +232,7 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="a5C-co-DQ3" kind="relationship" relationship="viewControllers" id="aCW-1T-Eve"/>
-                        <segue destination="SZo-en-sLt" kind="relationship" relationship="viewControllers" id="3NP-Gi-Wxf"/>
+                        <segue destination="Na4-0u-fyo" kind="relationship" relationship="viewControllers" id="Y0K-kQ-a56"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
