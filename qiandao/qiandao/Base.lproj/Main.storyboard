@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="696" y="-474"/>
         </scene>
-        <!--View Controller-->
+        <!--Qiandao Controller-->
         <scene sceneID="z5q-wx-Z2T">
             <objects>
-                <viewController id="6HP-dz-CgX" sceneMemberID="viewController">
+                <viewController id="6HP-dz-CgX" customClass="QiandaoController" customModule="qiandao" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lei-pY-Buq"/>
                         <viewControllerLayoutGuide type="bottom" id="a8G-G0-9df"/>
@@ -133,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gfh-1q-dxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776" y="1225"/>
+            <point key="canvasLocation" x="696" y="1123"/>
         </scene>
         <!--个人信息-->
         <scene sceneID="f2i-aq-U3i">
@@ -157,7 +157,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
                                         <state key="normal" title="我的签到"/>
                                         <connections>
-                                            <segue destination="P2D-4Y-jJt" kind="show" id="5d0-5z-XhO"/>
+                                            <segue destination="0z8-3G-mqH" kind="show" id="cnM-AQ-br7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5B-NQ-TX0">
@@ -209,7 +209,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qLO-Yd-zGm">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qLO-Yd-zGm" id="Rmz-KN-Aha">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -226,23 +226,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qav-sg-9K8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1228" y="2818"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="yNx-Fo-YAF">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u8J-II-l8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController id="P2D-4Y-jJt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0fr-8X-ttk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="0z8-3G-mqH" kind="relationship" relationship="rootViewController" id="hA6-fO-YBz"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="-1228" y="1974"/>
+            <point key="canvasLocation" x="-306" y="1980"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

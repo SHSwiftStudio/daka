@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A512E121D4F9F8E008B46E7 /* Qiandao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A512E111D4F9F8E008B46E7 /* Qiandao.swift */; };
 		0A8D156C1D4F654600FBF580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D156B1D4F654600FBF580 /* AppDelegate.swift */; };
 		0A8D156E1D4F654600FBF580 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D156D1D4F654600FBF580 /* FirstViewController.swift */; };
 		0A8D15701D4F654600FBF580 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D156F1D4F654600FBF580 /* MapViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A512E111D4F9F8E008B46E7 /* Qiandao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Qiandao.swift; sourceTree = "<group>"; };
 		0A8D15681D4F654600FBF580 /* qiandao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qiandao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8D156B1D4F654600FBF580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A8D156D1D4F654600FBF580 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				0A8D15761D4F654600FBF580 /* LaunchScreen.storyboard */,
 				0A8D15791D4F654600FBF580 /* Info.plist */,
 				0A8D159B1D4F797500FBF580 /* Personalinfo.swift */,
+				0A512E111D4F9F8E008B46E7 /* Qiandao.swift */,
 				0A8D159D1D4F800800FBF580 /* Youhui.swift */,
 			);
 			path = qiandao;
@@ -270,6 +273,7 @@
 				0A8D159C1D4F797500FBF580 /* Personalinfo.swift in Sources */,
 				0A8D156C1D4F654600FBF580 /* AppDelegate.swift in Sources */,
 				0A8D156E1D4F654600FBF580 /* FirstViewController.swift in Sources */,
+				0A512E121D4F9F8E008B46E7 /* Qiandao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
