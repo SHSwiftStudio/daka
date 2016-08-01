@@ -15,6 +15,7 @@
 		0A8D15781D4F654600FBF580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8D15761D4F654600FBF580 /* LaunchScreen.storyboard */; };
 		0A8D15831D4F654600FBF580 /* qiandaoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D15821D4F654600FBF580 /* qiandaoTests.swift */; };
 		0A8D158E1D4F654600FBF580 /* qiandaoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D158D1D4F654600FBF580 /* qiandaoUITests.swift */; };
+		0A8D159C1D4F797500FBF580 /* Personalinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D159B1D4F797500FBF580 /* Personalinfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0A8D15891D4F654600FBF580 /* qiandaoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qiandaoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8D158D1D4F654600FBF580 /* qiandaoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qiandaoUITests.swift; sourceTree = "<group>"; };
 		0A8D158F1D4F654600FBF580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8D159B1D4F797500FBF580 /* Personalinfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Personalinfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				0A8D15741D4F654600FBF580 /* Assets.xcassets */,
 				0A8D15761D4F654600FBF580 /* LaunchScreen.storyboard */,
 				0A8D15791D4F654600FBF580 /* Info.plist */,
+				0A8D159B1D4F797500FBF580 /* Personalinfo.swift */,
 			);
 			path = qiandao;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A8D15701D4F654600FBF580 /* SecondViewController.swift in Sources */,
+				0A8D159C1D4F797500FBF580 /* Personalinfo.swift in Sources */,
 				0A8D156C1D4F654600FBF580 /* AppDelegate.swift in Sources */,
 				0A8D156E1D4F654600FBF580 /* FirstViewController.swift in Sources */,
 			);
