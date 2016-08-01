@@ -204,7 +204,7 @@
         <scene sceneID="wXm-LG-cbi">
             <objects>
                 <navigationController id="Na4-0u-fyo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="72X-EW-FUY"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="first" id="72X-EW-FUY"/>
                     <navigationItem key="navigationItem" id="m3Q-DK-vgH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SnN-ev-0P5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
