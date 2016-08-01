@@ -27,6 +27,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zuj-7u-TBs">
+                                <rect key="frame" x="144" y="213" width="60" height="30"/>
+                                <state key="normal" title="点我签到">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6HP-dz-CgX" kind="show" id="Qjw-1M-Ni5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -35,6 +44,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="696" y="-474"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z5q-wx-Z2T">
+            <objects>
+                <viewController id="6HP-dz-CgX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lei-pY-Buq"/>
+                        <viewControllerLayoutGuide type="bottom" id="a8G-G0-9df"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vcf-FO-Ucj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="签到中。。。。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPI-Vm-Pn3">
+                                <rect key="frame" x="138" y="289" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfY-Ky-YlA">
+                                <rect key="frame" x="161" y="375" width="30" height="30"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="iQx-nN-wtv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O8x-ti-Kbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1490" y="-474"/>
         </scene>
         <!--地图-->
         <scene sceneID="wg7-f3-ORb">
@@ -75,15 +117,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ggp-Ku-IiI">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                            </scrollView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pCa-kF-MLG">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="活动列表" id="12J-2N-0Ny"/>
                                 </items>
                             </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ggp-Ku-IiI">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -189,6 +231,7 @@
         <!--Navigation Controller-->
         <scene sceneID="yNx-Fo-YAF">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u8J-II-l8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="P2D-4Y-jJt" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0fr-8X-ttk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -198,7 +241,6 @@
                         <segue destination="0z8-3G-mqH" kind="relationship" relationship="rootViewController" id="hA6-fO-YBz"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u8J-II-l8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1228" y="1974"/>
         </scene>
